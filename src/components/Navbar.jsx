@@ -1,8 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link, useLocation } from "react-router-dom";
 import logo from '../assets/logos/logo.png';
 
 export default function Navbar() {
+
+    const location = useLocation();
+
     return (
         <header>
             <Link to="/"><img src={logo} alt="" className="logo" /></Link>
@@ -10,13 +13,13 @@ export default function Navbar() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/">home</Link>
+                        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>home</Link>
                     </li>
                     <li>
-                        <Link to="/shop">shop</Link>
+                        <Link to="/shop" className={location.pathname === '/shop' ? 'active' : ''}>shop</Link>
                     </li>
                     <li>
-                        <Link to="/contact">contact</Link>
+                        <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>contact</Link>
                     </li>
                 </ul>
             </nav>

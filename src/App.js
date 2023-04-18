@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import './styles/style.css';
 
+
 function App() {
   return (
     <BrowserRouter>
