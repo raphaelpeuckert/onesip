@@ -142,4 +142,22 @@ nav ul li a.active::after {
     font-weight: 700;
 }
 
+
+
+.home--info-timeline {
+    display: grid;
+    grid-template-columns: 3px 1fr;
+}
+
+.timeline-component {
+    height: 100%;
+    width: 4px;
+    display: block;
+    background-color: blue;
+}
+
+.timeline-content {
+    display: flex;
+}
+
 /*  HOME STYLE END  */
