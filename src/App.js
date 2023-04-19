@@ -15,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="shop" element={<Shop />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="imprint" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

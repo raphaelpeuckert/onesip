@@ -16,10 +16,28 @@ export default function Home() {
             <section className="home--info">
                 <h4>How does our water come to you?</h4>
                 <div className="home--info-timeline">
-                    <div className="timeline-component"><div className="timeline-dot"></div></div>
+                    <div className="timeline-component"></div>
+                    <div className="timeline-content" id='first-timeline-content'></div>
+                    
+                    <div className="timeline-component"><div className="timeline-dot-out"><div className="timeline-dot-in"></div></div></div>
                     <div className="timeline-content">
                         <p>We source our water from Puerto Williams, located in the Patagonia region of Chile, where some of the purest water in the world can be found. Our water comes from melted snow and glacier runoff, and is carefully monitored and purified to ensure the highest standards of purity and quality. By sourcing our water from one of the cleanest and purest regions in the world, we're able to deliver a product that you can feel good about drinking.</p>
                         <img src={require('../assets/images/timeline-image-1.png')} alt="" />
+                    </div>
+                    <div className="timeline-component"><div className="timeline-dot-out"><div className="timeline-dot-in"></div></div></div>
+                    <div className="timeline-content">
+                        <img src={require('../assets/images/timeline-image-2.png')} alt="" />
+                        <p>We choose to receive our water by train, as it is the most environmentally friendly way to transport it. By using trains, we're able to significantly reduce our carbon footprint and minimize our impact on the environment. We're committed to sustainability and taking care of our planet, and that's why we're proud to use a delivery method that is both efficient and eco-friendly.</p>
+                    </div>
+                    <div className="timeline-component"><div className="timeline-dot-out"><div className="timeline-dot-in"></div></div></div>
+                    <div className="timeline-content">
+                        <p>We fill our water in eco-friendly bottling plants located in America. Our bottling plants use the latest technology to minimize waste and energy consumption, and are designed to be as environmentally friendly as possible. We're committed to sustainability and taking care of our planet, and that's why we're proud to use a filling process that is both efficient and eco-friendly.</p>
+                        <img src={require('../assets/images/timeline-image-3.png')} alt="" />
+                    </div>
+                    <div className="timeline-component"><div className="timeline-dot-out"><div className="timeline-dot-in"></div></div></div>
+                    <div className="timeline-content">
+                        <img src={require('../assets/images/timeline-image-4.png')} alt="" />
+                        <p>We use electric trucks for eco-friendly shipping. By using electric trucks, we're able to significantly reduce our carbon footprint and minimize our impact on the environment. We're committed to sustainability and taking care of our planet, and that's why we're proud to use a shipping method that is both efficient and eco-friendly.</p>
                     </div>
                 </div>
             </section>

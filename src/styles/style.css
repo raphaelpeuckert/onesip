@@ -74,6 +74,44 @@ nav ul li a.active::after {
 /*  HEADER STYLES END  */
 
 
+
+/*  FOOTER STYLES START  */
+
+footer {
+    display: flex;
+    margin-top: 112px;
+    padding: 88px 256px;
+    background: var(--brand-gradient);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer--links-container ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-size: var(--p);
+    font-weight: 700;
+}
+
+.footer--links-local {
+    gap: 32px;
+}
+
+.footer--links-global {
+    gap: 16px;
+}
+
+/*  FOOTER STYLES END  */
+
+
+
 /*  HOME STYLE START  */
 
 .home--hero {
@@ -144,20 +182,79 @@ nav ul li a.active::after {
 
 
 
+.home--info {
+    padding-inline: var(--content-padding);
+    margin-top: var(--section-padding-outside);
+}
+
+.home--info h4 {
+    font-size: var(--h4);
+    margin: 0;
+}
+
 .home--info-timeline {
     display: grid;
     grid-template-columns: 3px 1fr;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.timeline-component:first-of-type {
+    max-height: 16px;
+}
+
+#first-timeline-content {
+    margin-bottom: 16px;
 }
 
 .timeline-component {
     height: 100%;
     width: 4px;
     display: block;
-    background-color: blue;
+    background: var(--brand-gradient);
+    position: relative;
+}
+
+.timeline-dot-out {
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: var(--brand-gradient);
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+
+.timeline-dot-in {
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: var(--white);
+    box-sizing: border-box;
+    border-radius: 50%;
 }
 
 .timeline-content {
     display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.timeline-content p {
+    font-size: var(--p);
+    margin: 0;
+}
+
+.timeline-content img {
+    aspect-ratio: 3 / 2;
+    box-sizing: border-box;
+    max-height: 180px;
 }
 
 /*  HOME STYLE END  */
